@@ -1,0 +1,14 @@
+<nav class="rowCenter">
+	{% include '/frag/logo.frag.html.twig' %}
+	{% include '/frag/search.frag.html.twig' %}
+	{% include '/frag/list.frag.html.twig' 
+        with {
+            'listStyle': 'rowCenter',
+        }
+    %}
+
+	<div class="logos rowCenter">
+		{% include '/frag/userlogo.frag.html.twig' %}
+		<i class="fa-solid fa-basket-shopping"></i>
+	</div>
+</nav>

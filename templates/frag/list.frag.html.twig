@@ -1,0 +1,12 @@
+{% set style = listStyle %}
+{% set size = sectionInfo | length %}
+{% set min = 2 %} 
+<ul class="{{ style }}">
+	{% for i in min.. size - 1 %}
+		{% set j = i + 1 %}
+		{% set ref = "#sect" ~ j %}
+		<li>
+			<a class="link" href={{ ref }}>{{ sectionInfo[i].titre }}</a>
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,376 @@
+{% extends 'base.html.twig' %}
+{% block container %}
+	<style>
+		h1 {
+			margin: 10px 0;
+			font-size: 2.5rem
+		}
+		h2 {
+			margin: 10px 0;
+			font-size: 2.25rem
+		}
+		h3 {
+			margin: 10px 0;
+			font-size: 2rem
+		}
+		h4 {
+			margin: 10px 0;
+			font-size: 1.75rem
+		}
+		h5 {
+			margin: 10px 0;
+			font-size: 1.5rem
+		}
+		ul {
+			margin: 10px 60px;
+		}
+		li {
+			list-style: square;
+		}
+		.container {
+			width: 80vw;
+			background: black;
+			transform: translateY(10vh);
+			color: white;
+			font-family: "Jura", sans-serif;
+			font-size: 1.1rem;
+			padding: 40px;
+			text-align: justify;
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		strong {
+			font-size: 1.35rem;
+		}
+	</style>
+	<div class="container left">
+		<h1>CONDITIONS GÉNÉRALES DE VENTE</h1>
+		<h2>Préambule - Définition</h2>
+		<p>Chacun des termes mentionnés ci-dessous aura dans les présentes Conditions Générales la signification suivante :</p>
+		<p>
+			<strong>Acheteur</strong>
+			: désigne toute personne physique disposant de la pleine capacité juridique pour s’engager au titre des présentes conditions générales, titulaire d’un Compte Personnel qui achète ou souhaite acheter un ou plusieurs Biens sur le Site à un Vendeur.</p>
+		<p>
+			<strong>Annonce</strong>: désigne l'ensemble des éléments et données (visuelles, textuelles, sonores, photographies, dessins), déposé par un Annonceur sous sa responsabilité éditoriale, en vue d'acheter, d'échanger ou de vendre un jeu vidéo sur le site ProXGaming.fr.</p>
+		<p>
+			<strong>Annonceur</strong>
+			: désigne toute personne physique disposant de la pleine capacité juridique pour s’engager au titre des présentes conditions générales ou personne morale établie en France (inclus les DOM à l'exclusion de Mayotte et des TOM),titulaire d’un Compte Personnel, et ayant déposé et mis en ligne une Annonce via le site ProXGaming.fr.</p>
+		<p>
+			<strong>Jeu vidéo</strong>
+			: désigne tout produit physique ou digital dont la vente n’est pas interdite par la réglementation française applicable ni par les règles de diffusion du Site et qui est proposé à la vente par le Vendeur sur le Site ProXGaming.fr
+		</p>
+		<p>
+			<strong>Compte Personnel</strong>
+			: désigne l'espace gratuit, accessible depuis le Site Internet ProXGaming.fr, que tout Annonceur doit se créer, et à partir duquel il peut mettre en ligne, gérer, visualiser ses Annonces, modifier ses coordonnées personnelles et demander le transfert des fonds disponibles.
+		</p>
+		<p>
+			<strong>L'exploitant</strong>
+			: désigne la société qui édite et exploite le Site ProXGaming.fr : KieceGaming France, SAS au capital de 25.000 euros, immatriculée au registre du commerce et des sociétés de Paris sous le numéro 548 478 941, dont le siège social est situé 124 rue de la Game, 14321 St-Jean-de-la-Console.
+		</p>
+		<p>
+			<strong>Messagerie sécurisée</strong>
+			: désigne le système de messagerie mis à la disposition des Utilisateurs et des Annonceurs dans le cadre du Service PROXGAMING et permettant leur communication par échange de messages privés que seuls les Utilisateurs et Annonceurs concernés peuvent consulter. La Messagerie est uniquement accessible aux Utilisateurs et Annonceurs disposant d'un Compte Personnel.
+		</p>
+		<p>
+			<strong>Service de Paiement Sécurisé</strong>: désigne le service de paiement en ligne des Jeux vidéo mis à disposition du Vendeur et de l’Acheteur sur le Site ProXGaming.fr. Les prestations de paiement sont opérées par le prestataire de paiement de l'exploitant.
+		</p>
+		<p>
+			<strong>Service PROXGAMING</strong>
+			: désigne les services PROXGAMING mis à la disposition des Utilisateurs et des Annonceurs sur le Site Internet ProXGaming.fr
+		</p>
+		<p>
+			<strong>Service client</strong>
+			: désigne le service de INOON France auprès duquel l'Annonceur peut obtenir toute information complémentaire. Ce service peut être contacté par e-mail en cliquant sur le lien présent sur le Site Internet.
+		</p>
+		<p>
+			<strong>Site</strong>
+			: désigne le site internet exploité par INOON France accessible principalement depuis l'URL www.ProXGaming.fr et permettant aux Utilisateurs et aux Annonceurs d'accéder via internet au Service PROXGAMING.</p>
+
+		<p>
+			<strong>Transaction</strong>
+			: désigne les transactions qui transfèrent la propriété d’un Jeu vidéo d’un Vendeur à un Acheteur, à compter de la validation du paiement et la réception du Jeu vidéo par l’Acheteur, en vertu du contrat de vente conclu entre eux via l’utilisation du Service de Paiement Sécurisé.
+		</p>
+		<p>
+			<strong>Utilisateur</strong>
+			: désigne tout visiteur, ayant accès au Service PROXGAMING via le Site ProXGaming.fr et consultant le Service PROXGAMING, accessible depuis les différents supports.
+		</p>
+		<p>
+			<strong>Vendeur</strong>
+			: désigne tout Annonceur qui propose un ou plusieurs Jeux vidéo à la vente et utilise le Service de Paiement Sécurisé.
+		</p>
+
+		<h3>1 - L'objet</h3>
+		<p>
+			Les présentes conditions générales de Vente (ci-après: les « Conditions générales » ou « CGV ») sont révisables à tout moment et établissent les conditions contractuelles applicables à toute souscription ou utilisation, par un Annonceur ou un Acheteur connecté à son Compte Personnel, d'option(s) payante(s) et d’utilisation de crédits depuis le Site Internet ProXGaming.fr.
+		</p>
+		<h3>2 - L'acceptation des CGV</h3>
+		<p>
+			Toute souscription ou utilisation d'option(s) payante(s) et/ou d'utilisation de Crédits PROXGAMING, depuis n’importe quel support,  par un Annonceur ou un Acheteur vaut acceptation pleine et entière des CGV en vigueur.
+		</p>
+
+		<p>Toute adhésion sous réserve est considérée comme nulle et non avenue. L’Utilisateur qui n’accepte pas d’être lié par les présentes conditions générales ne doit pas utiliser nos Services.</p>
+
+		<p>En cas de non-respect par l’utilisateur des présentes Conditions Générales, nous nous réservons le droit de suspendre sans préavis les services et/ou de lui refuser l’accès aux services, sans indemnité ni droit à remboursement des sommes engagées.</p>
+
+		<h3>3 - Modalités de souscription a l'option payante et à l'utilisation de crédits</h3>
+		<h4>3.1 Règles générales</h4>
+		<h5>3.1.1 Option payante</h5>
+		<p>La souscription à l'option payante est exclusivement accessible aux Annonceurs connectés à leur Compte Personnel depuis le Site Internet ProXGaming.fr.</p>
+
+		<p>L'option payante ne peut être souscrite que pour une seule Annonce. En conséquence, il n'est pas possible de transférer le bénéfice d'une option payante d'une Annonce à une autre.</p>
+
+		<p>Les Annonces sont classées par ordre chronologique, en fonction de la date et de l'heure de leur mise en ligne. En conséquence, tout Annonceur reconnaît et accepte que la présence en tête de liste de son Annonce n'est que provisoire.</p>
+
+		<h5>3.1.2 L'utilisation de crédits</h5>
+		<p>Les Crédits sont acquis lors de la Vente d'un Jeu Vidéo.</p>
+
+		<p>Le solde de la vente est automatiquement converti en Crédit PROXGAMING. Le peut choisir d’utiliser ses Crédits ou de demander un retrait tel que décrit à l'article 6 des présentes Conditions Générales de Vente.</p>
+
+		<p>Les crédits sont attachés au Compte Personnel à partir duquel ils ont été crédités et ne peuvent être transférés sur un autre Compte Personnel.</p>
+
+		<h4>3.2 La souscription et l'utilisation</h4>
+		<h5>3.2.1 L'option payante</h5>
+		<p>L'option payante peut être souscrite, par tout Annonceur connecté à son Compte Personnel, depuis le Site Internet ProXGaming.fr, depuis le formulaire de dépôt d’une Annonce, via le bouton « Paiement sécurisé ».</p>
+
+		<p>Le Service de Paiement sécurisé ne peut être souscrit qu’au moment du dépôt d’une Annonce.</p>
+
+		<h5>3.2.2 Utilisation de crédits</h5>
+		<p>Tout Vendeur connecté à son Compte Personnel peut, à partir de l’onglet « Balance » ou depuis n'importe quelle Annonce, utiliser ses crédits disponibles.
+		</p>
+		<p>
+			L’Utilisation de crédits ne peut s’effectuer qu'au moment du paiement d'un Jeu Vidéo acheté sur PROXGAMING.
+		</p>
+		<h4>3.3 Durée et effet de l'option payante et des crédits</h4>
+		<h5>3.3.1 Options payantes</h5>
+		<p>
+			La souscription à l'option « Paiement sécurisé » est souscrite pour la durée de diffusion de l'Annonce, soit pour une durée maximum de soixante (60) jours à partir de la date de mise en ligne de l'Annonce.
+		</p>
+		<p>
+			Lors du retrait anticipé de l'Annonce (soit du fait du Vendeur, soit du fait de l'Exploitant notamment en cas de contenu abusif) ou à l'expiration de sa durée de diffusion, l'option payante cesse de produire ses effets.
+		</p>
+		<p>
+			La suppression d'un Compte Personnel entraîne la suppression de toute(s) Annonce(s) attachée(s) à ce compte (même adresse mail) et, en conséquence, de l'option payante souscrite pour ces Annonces et ne donne aucun droit à remboursement, ni indemnité, ce que le Vendeur reconnait et accepte.
+		</p>
+		<h5>3.3.2 Crédits</h5>
+		<p>
+			Chaque Crédit a une durée de validité indéterminée.
+		</p>
+		<p>
+			La suppression d'un Compte Personnel entraîne la suppression des crédits associés à ce compte.
+		</p>
+		<p>
+			En conséquence, tout crédit non consommé sera supprimé du Compte Personnel du Vendeur, sans possibilité de remboursement ou d'indemnisation.
+		</p>
+		<h4>4 - Description l'Option Payante</h4>
+		<h5>4.1 Paiement Sécurisé</h5>
+		<p>
+			Le paiement sécurisé est une option payante ouvrant droit, autant pour le Vendeur que pour l'Acheteur, à l'intervention des équipes PROXGAMING, via le programme de Protection PROXGAMING, lors de l'apparition d'un litige entre Acheteur et Vendeur.
+		</p>
+		<h5>4.1.1 Programme de Protection PROXGAMING</h5>
+		<p>
+			<strong>Protection des Vendeurs:</strong>
+		</p>
+	</p>
+	<p>
+		La Protection des Vendeurs peut s'appliquer lorsqu'un Acheteur soutient :
+	</p>
+	<ul>
+		<li>
+			Qu'il n'a pas reçu le Jeu Vidéo de la part du Vendeur (réclamation de type "Objet non reçu")
+		</li>
+		<li>
+			Que le Jeu Vidéo reçu ne correspond pas à la description
+		</li>
+	</ul>
+	<p>
+		<strong>Conditions de base</strong>
+	</p>
+</p>
+<p>
+	Pour être éligible à la Protection des Vendeurs, le Vendeur doit remplir toutes les conditions de base suivantes, ainsi que toute condition supplémentaire applicable:
+</p>
+<ul>
+	<li>
+		Le Vendeur doit expédier le Jeu Vidéo à l'adresse de livraison indiquée par l'Acheteur dans la Messagerie Sécurisée ou au point relais le plus proche.
+	</li>
+	<li>
+		Le Vendeur doit fournir une preuve de dépôt (numéro de suivi) à l'Acheteur, via la Messagerie Sécurisée, dès l'envoi du Jeu Vidéo.
+	</li>
+</ul>
+
+<p>PROXGAMING détermine, à son entière discrétion, si votre réclamation est éligible au programme de Protection des Vendeurs.</p>
+
+<p>PROXGAMING prendra une décision, à son entière discrétion, en fonction des conditions d'éligibilité, de toute information ou documentation communiquée au cours de la procédure de résolution ou de toute autre information que PROXGAMING juge pertinente et appropriée dans les circonstances.
+</p>
+<p>
+	Conditions supplémentaires pour les réclamations de type « Objet non reçu »
+</p>
+<p>
+	Pour être éligible à la Protection des Vendeurs en cas de réclamation de type Objet non reçu d'un Acheteur, le Vendeur doit remplir les conditions de base et les conditions supplémentaires indiquées ci-dessous :
+</p>
+<ul>
+	<li>
+		Fournir une preuve de livraison comme indiqué ci-dessous.
+	</li>
+	<p>
+		Conditions supplémentaires pour les Jeux dématérialisés (Digital)
+	</p>
+
+	<p>
+		Pour que la vente de jeux dématérialisés soit éligible à la Protection des Vendeurs, elle doit remplir les conditions de base et les conditions supplémentaires suivantes :
+	</p>
+	<ul>
+		Le Jeu Vidéo doit ne jamais avoir était installé (Neuf) et comporter la mention « état neuf » dans l'annonce.
+													Le Vendeur doit avoir livré le Jeu Vidéo et fourni une preuve de livraison pour les jeux immatériels.
+													Établissement d'une preuve de livraison ou de dépôt
+													
+													Jeux Vidéo physiques :
+													
+													Preuve de dépôt
+													Preuve de livraison
+													Document en ligne ou papier émanant d'une société de livraison sur lequel figurent :
+													
+													La date d'expédition
+													L'adresse du destinataire correspondant à l'adresse de livraison indiquée par l'Acheteur dans la Messagerie Sécurisée ou au point relais le plus proche.
+													Document en ligne ou papier émanant d'une société de livraison sur lequel figurent :
+													
+													La date de livraison et la mention "livré"
+													L'adresse du destinataire correspondant à l'adresse de livraison indiquée par l'Acheteur dans la Messagerie Sécurisée ou au point relais le plus proche
+													Jeux Vidéo immatériels:
+													
+													Les éléments suivants sont exigés comme preuve de livraison des jeux Vidéo immatériels :
+													
+													Pour les Jeux Vidéo immatériels, une preuve de dépôt ou de livraison désigne une preuve irréfutable attestant que le Jeu Vidéo a été livré. Est notamment considéré comme preuve irréfutable les échanges via la Messagerie Sécurisée dans lequels le Vendeur transfert la propriété du Jeu Vidéo à l'Acheteur.
+													
+													Protection des Achats
+													Le programme de Protection PROXGAMING peut s'appliquer lorsque l'Acheteur rencontre les problèmes particuliers suivants dans le cadre d'une transaction :
+													
+													l'Acheteur n'a pas reçu le Jeu Vidéo acheté auprès d'un vendeur.
+													l'Acheteur a reçu un Jeu Vidéo, mais il ne s'agit pas de celui qu'il a acheté.
+													Éligibilité à la Protection des Achats
+													
+													Pour être éligible au Programme de Protection, l'Acheteur doit remplir toutes les conditions suivantes :
+													
+													Posséder un Compte PROXGAMING en règle
+													Utiliser le Service de Paiement Sécurisé pour son Achat
+													Essayer de contacter le Vendeur pour résoudre le problème directement avec lui avant de signaler un litige
+													Répondre à la demande de documentation de PROXGAMING et à d'autres informations dans les délais exigés
+													Signaler un litige dans un délai de 10 jours suivant la date à laquelle l'Acheteur à procédé au paiement
+													Ne pas avoir reçu de remboursement ou accepté une solution alternative auprès d'une autre source
+													Réclamations de type « Objet non reçu »  
+													
+													La réclamation ne sera pas éligible à un remboursement pour Objet non reçu au titre de la Protection des Achats si :
+													
+													l'Acheteur et le Vendeur conviennent d'un commun accord à la remise en main propre du Jeu Vidéo.
+													Le vendeur a fourni une preuve de livraison.
+													Si le vendeur présente une preuve attestant qu'il a livré le Jeu Vidéo, PROXGAMING peut donner gain de cause au vendeur en cas de réclamation de type Objet non reçu, même si vous soutenez que vous n'avez pas reçu le Jeu Vidéo.
+													
+													Réclamations de type « Ne correspondant à sa description » 
+													
+													Un Jeu Vidéo peut être considéré comme Ne correspondant pas du tout à sa description si :
+													
+													Le Jeu Vidéo est sensiblement différent de la description que le vendeur en a fait
+													l'Acheteur a reçu un Jeu Vidéo complètement différent.
+													L'état du Jeu Vidéo était faussement représenté (Par exemple, le Jeu Vidéo était décrit comme neuf alors qu'il est d'occasion)
+													Le Jeu Vidéo n'est pas authentique alors qu'il était présenté comme tel (par ex., contrefaçon)
+													Certaines fonctionnalités importantes du Jeu Vidéo sont manquantes, ce qui n'était pas indiqué dans sa description au moment de l'achat.
+													Le Jeu Vidéo a été endommagé lors de son expédition.
+													Le Jeu Vidéo reçu est inutilisable en l'état et n'était pas décrit comme tel.
+													Un objet peut ne pas être considéré comme Ne correspondant pas du tout à sa description si :
+													
+													Le vendeur a correctement décrit le défaut de l'objet dans sa description.
+													Le Jeu Vidéo était correctement décrit, mais vous n'en vouliez plus à sa réception.
+													Le Jeu Vidéo était correctement décrit, mais ne répondait pas à vos attentes.
+													Le Jeu Vidéo a de petites égratignures et était décrit comme « état médiocre » ou « état satisfaisant ».
+													La Protection des Achats PROXGAMING ne couvre pas les achats suivants :
+													
+													Jeu Vidéo non conformes à nos conditions générales.
+													Tout Jeu Vidéo remis en mains propres.
+													Litiges signalés au-delà de 10 jours suivant l'achat et concernant un article non reçu ou ne correspondant pas du tout à sa description.
+													La protection des achats se limite à l'article en tant que tel. PROXGAMING ne peut pas aider l'Acheteur à faire une réclamation au titre de la garantie auprès de votre vendeur ou du fabricant original. De même, la Protection des Achats ne peut pas résoudre des problèmes liés à l'absence de garantie ou de documents d'enregistrement du produit. 
+													
+													Notre procédure de résolution des litiges en ligne
+													
+													Si aucune des parties ne parvient à résoudre un problème, Acheteur et Vendeur peuvent solliciter l'intervention de PROXGAMING pour trancher le litige. Les étapes à suivre sont indiquées ci-dessous. En cas de non respect, la réclamation pourra être rejetée :
+													
+													Étape 1 : contactez la partie adverse afin d'entamer une conversation directe au sujet du problème rencontré avec la transaction, ce qui pourra faciliter la résolution du litige. Si vous ne parvenez pas à résoudre le litige directement avec le Vendeur/Acheteur, passez à l'étape 2. Nous suspendrons l'argent associé à la transaction jusqu'à ce que le litige soit résolu ou clôturé.
+													
+													Étape 2 : signalez un litige dans un délai de 10 jours suivant la date à laquelle le paiement a été effectué. 
+													
+													Étape 3 : répondez aux demandes de documents ou à toute autre demande d'information de PROXGAMING. Nos équipes pourront vous demander de fournir des reçus, des rapports de police ou tout autre document. Vous devez répondre à ces demandes de manière opportune conformément aux indications données dans les correspondances que nous vous adressons.
+													
+													Étape 4 : répondez aux demandes d'expédition de PROXGAMING en temps voulu si vous déposez une réclamation de type Ne correspondant pas du tout à sa description. PROXGAMING pourra vous demander de réexpédier l'objet à vos frais au vendeur et de fournir une Preuve de livraison.
+													
+													Étape 5 : PROXGAMING prend une décision finale, à son entière discrétion, en fonction des conditions d'éligibilité susmentionnées, de toute information supplémentaire communiquée au cours de la procédure de résolution des litiges en ligne ou de toute autre information que PROXGAMING juge pertinente et appropriée dans les circonstances.
+													
+													Litige avec PROXGAMING ou l'émetteur de la carte de débit/crédit
+													
+													En cas d'utilisation d'une carte de débit/crédit comme mode de paiement d'une transaction par le biais du Service de Paiement Sécurisé PROXGAMING et que l'Acheteur n'est pas satisfait de la transaction, celui-ci peut contester la transaction auprès de l'émetteur de sa carte. Les droits d'opposition bancaire applicables en cas de paiement par carte peuvent être plus étendus que ceux dont l'Acheteur bénéficie au titre de la Protection des Achats PROXGAMING.
+													
+													Il est strictement interdit d'engager des litiges simultanément ni demander plusieurs remboursements. L'Acheteur doit choisir de signaler un litige auprès de PROXGAMING ou de le signaler auprès de l'émetteur de sa carte. En cas de déclarations simultanées pour la même transaction, nous clôturerons le litige signalé auprès de nos services. Cette clôture n'aura aucune incidence sur la procédure de litige engagée auprès de l'émetteur de votre carte. Par ailleurs, en cas de signalement d'un litige auprès de l'émetteur de sa carte, l'Acheteur ne pourra pas signaler un litige ou déposer une réclamation ultérieurement auprès de nos services.
+													
+													Si l'Acheteur décide de contester une transaction auprès de PROXGAMING et que nous ne lui donnons pas gain de cause, il pourra signaler ultérieurement le litige auprès de l'émetteur de sa carte.
+													
+													Avant de contacter l'émetteur de sa carte ou de signaler un litige auprès de PROXGAMING, l'Acheteur doit contacter le vendeur pour tenter de résoudre le problème conformément aux présentes conditions générales de vente.
+
+		<h3>5 - Prix</h3>
+		Le tarif appliqué est celui en vigueur au jour de l'achat d'une l'option payante. L'Exploitant se réserve la possibilité de modifier ses prix à tout moment.
+													
+													Le tarif standard du service s'élève à 7% TTC du prix de vente du Jeu Vidéo convenu entre l'Acheteur et le Vendeur (hors coût d'expédition),avec un minimum de 0,99 euros.
+
+		<h3>6 - Paiement et facturation</h3>
+		<h4>6.1 Options payantes</h4>
+		La souscription à l'option payante peut se faire par tout Annonceur connecté à son Compte Personnel. Le paiement est exigible au moment de la réception du prix de vente du Jeu Vidéo.
+													
+													Le Vendeur peut depuis son Espace Personnel, consulter ses historiques de transactions et demander à PROXGAMING l'envoi d'une facture à son adresse email.
+													
+													Le Vendeur, depuis l'onglet « Balance », a la possibilité de demander à PROXGAMING le retrait de son solde disponible, vers son compte Paypal ou son compte bancaire.  
+													
+													Pour être validée, la demande de transfert doit porter sur un montant supérieur à 29€
+													Seules les gains issues de transactions achevées peuvent être transférées
+		<h4>6.2 Remboursement et Rétractation</h4>
+
+		<h5>6.2.1 Remboursement</h5>
+		L'options payante ne donne lieu à aucun remboursement.
+													
+													En cas de suppression d'un Compte Personnel :
+													
+													La suppression d'un Compte Personnel entraîne la suppression de toute(s) Annonce(s) attachée(s),et en conséquence, la suppression de toute(s) option(s) payante(s) souscrite(s) pour ces Annonces et ne donne droit à aucun droit à remboursement, ni indemnité, ce que le Vendeur reconnait et accepte.
+													
+													La suppression d'un Compte Personnel entraîne la suppression des crédits associés, n'ouvrant aucun droit à remboursement, ce que le Vendeur reconnait et accepte.
+
+		<h5>6.2.2 Rétractation</h5>
+		<p>
+			En application des articles L 221-18 et suivants du code de la consommation, le Vendeur dispose d'un délai de quatorze (14) jours francs pour se rétracter. Toutefois, en activant son Annonce, le Vendeur accepte que l'Exploitant commence à exécuter la prestation et renonce expressément à son droit de rétractation.
+		</p>
+		<h3>7 - Responsabilité et force majeure</h3>
+		<p>
+			La responsabilité de l'Exploitant ne peut être engagée en cas d'inexécution ou de mauvaise exécution de la commande due, soit du fait du Vendeur, soit d'un cas de force majeure.
+		</p>
+		<h3>8 - Modification des CGV</h3>
+		<p>
+			Les présentes CGV sont applicables à partir du 21 juin 2021.
+		</p>
+		<p>
+			L’Exploitant se réserve le droit de modifier, librement et à tout moment, les présentes CGV. Chaque internaute se connectant au site ProXGaming.fr est invité à consulter régulièrement les présentes CGV afin de prendre connaissance d’éventuels changements.
+		</p>
+		<h3>9 - Dispositions diverses</h3>
+		<p>
+			Tout traitement de données personnelles dans le cadre des présentes est soumis aux dispositions de notre politique de confidentialité, qui fait partie intégrante des présentes CGV.
+		</p>
+		<p>
+			Si une partie des CGV devait s'avérer illégale, invalide ou inapplicable, pour quelque raison que ce soit, les dispositions en question seraient réputées non écrites, sans remettre en cause la validité des autres dispositions qui continueront de s'appliquer entre les Utilisateurs et L'Exploitant
+		</p>
+		<p>
+			Toute réclamation doit être adressée au Service Client de PROXGAMING.</p>
+		<p style="margin-bottom:10px">Les CGV sont soumises au droit français.
+		</p>
+
+		{% include 'frag/btn.frag.html.twig' with {
+        'titre' : '', 'chemin': 'home', 'label' : 'retour'
+    } %}
+	</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% include '/frag/header.frag.html.twig' %}
+{% for i in 2.. size - 1 %}
+	{% set j = i + 1 %}
+	{% set id = "sect" ~ j %}
+	<div id="{{ id }}" class="sectDiv"></div>
+	{% include '/frag/section.frag.html.twig' 
+				with {
+					'sectionTitre': sectionInfo[i].titre,
+					'sectionCat': sectionInfo[i].categorie,
+				}
+			%}
+{% endfor %}

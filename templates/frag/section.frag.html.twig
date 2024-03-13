@@ -1,0 +1,23 @@
+{% set titre = sectionTitre %}
+{% set categorie = sectionCat %}
+{% set size = categorie | length %}
+
+<section class="sect colCenter">
+	{% include '/frag/btn.frag.html.twig' 
+        with {
+			'titre': titre
+		}
+    %}
+
+	<div class="cards rowCenter">
+		{% for i in 0.. 3 %}
+			{% include '/frag/infocard.frag.html.twig' with {
+					'image':categorie[i].image, 
+					'precision':categorie[i].description,
+					'titre':categorie[i].titre,
+					'prix':categorie[i].prix ~ '€'
+					}
+				%}
+		{% endfor %}
+	</div>
+</section>

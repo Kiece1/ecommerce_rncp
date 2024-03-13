@@ -1,0 +1,47 @@
+<footer class="rowCenter">
+	<div class="contForm">
+		<form action="">
+			<label for="email">inscription newsletter</label>
+			<input type="email" name="email" id="email" placeholder="email">
+		</form>
+		<ul class="rowCenter social">
+			<li>
+				<i class="fa-brands fa-x-twitter"></i>
+			</li>
+			<li>
+				<i class="fa-brands fa-facebook"></i>
+			</li>
+			<li>
+				<i class="fa-brands fa-instagram"></i>
+			</li>
+			<li>
+				<i class="fa-brands fa-youtube"></i>
+			</li>
+			<li>
+				<i class="fa-brands fa-tiktok"></i>
+			</li>
+		</ul>
+	</div>
+	<div class="left">
+		{% include '/frag/list.frag.html.twig' 
+        with {
+            'listStyle': 'left menu',
+        }
+    %}
+		<a href="{{ path('conditions') }}"><li>Conditions Légales</li></a>
+	</div>
+	<ul class="coordonnees left">
+		<li>Boutique ProXGaming</li>
+		<li>
+			124 rue de la Game
+		</li>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d83917.3853452733!2d2.1499448751331838!3d48.90742233266301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47e6618ee8077527%3A0xa297b1eed9bac421!2s64%20Rue%20du%20Gros%20Murger%2C%2078600%20Maisons-Laffitte%2C%20France!3m2!1d48.9472485!2d2.1346963!4m5!1s0x47e66fc582b70411%3A0x99962ec25749bd6e!2sMatignon%2C%203%20Av.%20Matignon%2C%2075008%20Paris!3m2!1d48.8697825!2d2.3111292999999997!5e0!3m2!1sfr!2sfr!4v1710162473225!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<li>St-Jean-de-la-Console (14321)</li>
+		<a href="tel:+33(0)123456789">
+			<li>+33(0)123456789</li>
+		</a>
+		<a href="mailto:proxgaming@gmail.com">
+			<li>proxgaming@gmail.com</li>
+		</a>
+	</ul>
+</footer>

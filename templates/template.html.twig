@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	PROXGAMING
+{% endblock %}
+
+{% set size = videoGames | length %}
+{% set sectionInfo = [
+		{
+			titre:"connexion",
+			categorie:videoGames,
+		},{
+			titre:"panier",
+			categorie:videoGames,
+		},{
+			titre:"nouveautés",
+			categorie:videoGames,
+		},{
+			titre:"populaires",
+			categorie:videoGames,
+		},{
+			titre:"meilleures ventes",
+			categorie:videoGames,
+		},{
+			titre:"promos",
+			categorie:videoGames,
+		}
+	] %}
+
+{% set size = sectionInfo | length %}
+{% block body %}
+	{% include '/frag/menuburger.frag.html.twig' %}
+	{% include '/frag/navbar.frag.html.twig' %}
+	{% include '/frag/hero.frag.html.twig' %}
+	<div class="container colCenter">
+		{% block container %}
+			{% include '/frag/container.frag.html.twig' %}
+		{% endblock %}
+		{% include '/frag/footer.frag.html.twig' %}
+		{% include '/frag/copyright.frag.html.twig' %}
+	</div>
+{% endblock %}
