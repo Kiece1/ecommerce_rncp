@@ -1,12 +1,20 @@
-{% set style = listStyle %}
-{% set size = sectionInfo | length %}
-{% set min = 2 %} 
-<ul class="{{ style }}">
-	{% for i in min.. size - 1 %}
-		{% set j = i + 1 %}
-		{% set ref = "#sect" ~ j %}
-		<li>
-			<a class="link" href={{ ref }}>{{ sectionInfo[i].titre }}</a>
-		</li>
+{% set size = menuInfo | length %}
+<ul class="{{ listStyle }}">
+	{% for i in 0.. size - 1 %}
+		{% set ref = "#sect" ~ i %}
+		{% set currentPath = path(app.request.attributes.get('_route')) %}
+		{% if  currentPath == "/home" %}
+			<li>
+				<a class="link" href={{ ref }}>{{ menuInfo[i] }}</a>
+			</li>
+		{% else %}
+			{% if i != indice %}
+				<li>
+					<a href="{{ path('page', { 'indice': i}) }}">{{ menuInfo[i] }}</a>
+				</li>
+			{% else %}
+				<li style="color:white;cursor:default;">{{ menuInfo[i] }}</li>
+			{% endif %}
+		{% endif %}
 	{% endfor %}
 </ul>

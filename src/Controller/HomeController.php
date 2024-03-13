@@ -12,20 +12,24 @@ class HomeController extends AbstractController
     #[Route('/home', name: 'home')]
     public function index(VideoGameRepository $videoGameRepository): Response
     {
+        $menuInfo = ["nouveautés", "populaires", "meilleures ventes", "promos"];
+
         $videoGames = $videoGameRepository->findAll();
         return $this->render(
             'home/index.html.twig',
-            compact('videoGames')
+            compact('videoGames', 'menuInfo')
         );
     }
 
-    #[Route('/page', name: 'page')]
-    public function page(VideoGameRepository $videoGameRepository): Response
+    #[Route('/page/{indice?0}', name: 'page')]
+    public function page($indice, VideoGameRepository $videoGameRepository): Response
     {
+        $menuInfo = ["nouveautés", "populaires", "meilleures ventes", "promos"];
+
         $videoGames = $videoGameRepository->findAll();
         return $this->render(
             'home/page.html.twig',
-            compact('videoGames')
+            compact('videoGames', 'menuInfo', 'indice')
         );
     }
 

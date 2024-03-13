@@ -1,7 +1,8 @@
+{% set path = '/assets/media/img/' ~ image %}
 <div class="contInfoCard">
 	<div class="infoCard card left">
 		<div class="contImg">
-			<img src="{{ asset('/assets/media/img/' ~ image)}}" alt=""/>
+			<img src="{{ asset( path )}}" alt=""/>
 		</div>
 		<div class="cardContText">
 			<p>{{ precision }}</p>
