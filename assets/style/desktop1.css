@@ -1,0 +1,591 @@
+:root {
+  --ratio-header-carousel: 1;
+  --height-vertcard: 85px;
+  --height-contImg: 80px;
+  --height-cardInfo: 215px;
+  --width-cardInfo: 250px;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.colCenter,
+.rowCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowCenter {
+  flex-direction: row;
+}
+
+.start {
+  align-items: start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  background-image: url("/assets/media/img/team-vg-jeux-video-attendus-2019-cover-jeu-video-vonguru-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.heroSection {
+  position: relative;
+}
+
+.imgCont {
+  transform: translateY(25vh);
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  filter: brightness(80%);
+  border-radius: 5px;
+}
+
+.btnCont {
+  position: absolute;
+  right: calc(5% + 10vh);
+  bottom: calc(-25vh + 10vh);
+  z-index: 1;
+}
+
+#btnHero {
+  width: 250px;
+  height: 50px;
+}
+
+#btnHero .imgCont {
+  filter: grayscale(0.9) brightness(50%) !important;
+}
+
+.container {
+  width: 90vw;
+  transform: translateY(35vh);
+  margin: auto;
+}
+
+html {
+  /* font-family: "Comfortaa", sans-serif; */
+  font-family: "Jura", sans-serif;
+}
+
+.contMenuBurger {
+  display: none;
+  visibility: hidden;
+}
+
+nav {
+  width: 100vw;
+  height: 75px;
+  background: #000;
+  color: white;
+  padding: 50px 0;
+  gap: 10vh;
+  border-bottom: 2px solid goldenrod;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  margin: 0;
+}
+
+nav .contLogo,
+nav .contText,
+nav .contImg {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+nav ul {
+  gap: 30px;
+  color: goldenrod;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+nav a {
+  color: goldenrod;
+  &:hover {
+    color: white;
+  }
+}
+
+nav ul li {
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+  &:active {
+    translate: 0 -2px;
+  }
+}
+
+nav .contText .contLogo {
+  background: goldenrod;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  height: 37.25px;
+  width: 45px;
+}
+
+nav .contText .contLogo i {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav .contText input {
+  width: 35vh;
+  height: 37px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+nav .contImg {
+  width: var(--height-contImg);
+  height: var(--height-contImg);
+  overflow: hidden;
+  &:hover {
+    scale: 1.05;
+  }
+  &:active {
+    translate: 0 -2px;
+  }
+}
+
+nav .contImg img {
+  width: var(--height-contImg);
+}
+
+nav .logos {
+  gap: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+nav .logos .contLogo {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: white;
+  &:hover {
+    background: goldenrod;
+  }
+}
+
+nav .logos .contLogo:hover i {
+  color: white;
+}
+
+nav .logos i {
+  font-size: 30px;
+  color: goldenrod;
+  &:hover {
+    color: rgb(255, 255, 255);
+  }
+}
+
+nav i {
+  font-size: 30px;
+  color: white;
+  &:hover {
+    color: goldenrod;
+  }
+}
+
+header {
+  margin-bottom: -5px;
+  width: 100%;
+  background: #000000;
+  gap: 50px;
+  padding: 150px 0 70px;
+}
+
+header .hero {
+  gap: 20px;
+}
+
+header .hero .contImg {
+  width: calc(var(--ratio-header-carousel) * 800px);
+  height: calc(var(--ratio-header-carousel) * 600px);
+  /* transform: translateY(-20vh); */
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+header .hero .contImg #heroImg {
+  width: 150%;
+  align-items: center;
+}
+
+header .vertCards {
+  gap: 17px;
+  align-items: center;
+}
+
+header .vertCards .card {
+  width: 350px;
+  height: var(--height-vertcard);
+  background: rgb(129, 129, 129);
+  border-radius: 10px;
+  gap: 5px;
+}
+
+header .vertCards .card p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  margin: 10px;
+}
+
+header .vertCards .card .contImg {
+  max-width: calc(1.8 * var(--height-vertcard));
+  max-height: var(--height-vertcard);
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+header .vertCards .card .contImg img {
+  width: 115%;
+  height: 110%;
+  transform: translateX(-2vh);
+}
+
+h2 {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+button {
+  background: #000;
+  color: white;
+  font-weight: 700;
+  border: 2px solid white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 500ms;
+  &:hover {
+    background: goldenrod;
+    color: rgb(0, 0, 0);
+    border-color: goldenrod;
+    transition: 500ms;
+    cursor: pointer;
+  }
+  &:active {
+    translate: 0 -2px;
+  }
+}
+
+div.sectDiv {
+  width: 100%;
+  height: 130px;
+  background: #000;
+}
+
+.sect {
+  margin: -5px 0;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.card {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sect .contText {
+  gap: 30px;
+  position: absolute;
+  top: 0;
+  left: 10vh;
+}
+
+.sect .cards {
+  flex-wrap: wrap;
+  padding: 40px 0;
+  gap: 3vh;
+}
+
+.sect .cards .card {
+  color: white;
+  font-size: 1.5rem;
+  gap: 20px;
+  z-index: 10;
+}
+
+.sect .cards .card .cardContText h3 {
+  text-transform: capitalize;
+  width: calc(0.8 * var(--width-cardInfo));
+  height: 5vw;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.sect .cards .card .cardContText p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: goldenrod;
+  margin: 10px 0;
+}
+
+.sect .cards .card .cardContText p:last-child {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: goldenrod;
+}
+
+.sect .cards .card .contImg {
+  width: var(--width-cardInfo);
+  height: var(--height-cardInfo);
+  overflow: hidden;
+  border-radius: 5px 5px 10px 10px;
+  border: none;
+}
+
+.sect .cards .card .contImg img {
+  height: 100%;
+  translate: -20%;
+}
+
+.sect .cards .contInfoCard {
+  background: transparent;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  width: auto;
+  transition-property: scale, background, border-radius;
+  transition: 1500ms;
+  &:hover {
+    scale: 1.05;
+    transition-property: scale, background;
+    transition: 500ms;
+    background: #fff;
+    border: 5px solid goldenrod;
+  }
+}
+
+.sect .cards .contInfoCard .cardContText {
+  margin: -10px 30px 10px 5px;
+}
+
+.sect .cards .contInfoCard:hover .cardContText,
+.sect .cards .contInfoCard:hover .cardContText p,
+.sect .cards .contInfoCard:hover .contImg {
+  color: black;
+  border-radius: 0px 0px 0 0;
+}
+
+footer {
+  font-size: 1rem;
+  width: 100%;
+  height: 60vh;
+  background: #222222;
+  color: white;
+  gap: 100px;
+}
+
+footer form input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 40vh;
+}
+
+footer form label {
+  text-transform: capitalize;
+}
+
+.contForm {
+  width: 40vh;
+  height: 40vh;
+}
+
+footer ul {
+  height: 40vh;
+}
+
+footer .social {
+  margin-top: 40px;
+  height: auto;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+footer .social li {
+  cursor: pointer;
+}
+
+footer .social li:nth-child(1):hover {
+  color: #000;
+}
+
+footer .social li:nth-child(2):hover {
+  color: #1877f2;
+}
+
+footer .social li:nth-child(3):hover {
+  color: #833ab4;
+}
+
+footer .social li:nth-child(4):hover {
+  color: red;
+}
+
+footer .social li:nth-child(5):hover {
+  color: #69c9d0;
+}
+
+footer .menu {
+  gap: 1.5rem;
+}
+
+footer .menu li {
+  text-transform: capitalize;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.copyright {
+  width: 100vw;
+  background: white;
+  padding: 5px 0 5px 10px;
+  font-weight: 900;
+}
+
+footer .coordonnees {
+  gap: 7px;
+}
+
+input[type="checkbox"]:checked > iframe {
+  display: none;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.panierList {
+  flex-direction: row;
+  align-items: start;
+  position: absolute;
+  top: 10vh;
+  left: 10vh;
+  background: #090909;
+  width: 90vw;
+  margin: 10vh auto 0;
+  padding: 20px 20px 40px 40px;
+  gap: 80px;
+}
+
+.panierList ul {
+  gap: 10px;
+}
+
+.cardPanier {
+  color: white;
+}
+
+.cardPanier .contTextPanier h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.cardPanier .contTextPanier p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.cardPanier .contTextPanier .crud {
+  gap: 30vh;
+}
+
+.cardPanier .contTextPanier .crud i {
+  gap: 30vh;
+  color: goldenrod;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+#prix {
+  color: goldenrod;
+  font-size: 3rem;
+}
+
+.cardPanier {
+  flex-direction: row;
+  width: 50vw;
+  border: 2px solid white;
+  border-radius: 5px;
+  gap: 50px;
+  padding: 20px 0px 20px 20px;
+}
+
+.cardPanier .imgContPanier {
+  width: 220px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.modal {
+  z-index: 1;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  transform: translateY(15vh);
+  position: fixed;
+}
+
+.modal button {
+  margin-top: 10px;
+  padding: 15px 70px;
+}

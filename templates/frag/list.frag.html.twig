@@ -8,13 +8,17 @@
 				<a class="link" href={{ ref }}>{{ menuInfo[i] }}</a>
 			</li>
 		{% else %}
-			{% if i != indice %}
-				<li>
-					<a href="{{ path('page', { 'indice': i}) }}">{{ menuInfo[i] }}</a>
-				</li>
-			{% else %}
-				<li style="color:white;cursor:default;">{{ menuInfo[i] }}</li>
-			{% endif %}
+			<a href="{{ path('page', { 'indice': i}) }}">
+				{% if i != indice or currentPath == "/panier" %}
+					<li>
+						{{ menuInfo[i] }}
+					</li>
+				{% else %}
+					<li style="color:white;text-decoration:underline">
+						{{ menuInfo[i] }}
+					</li>
+				{% endif %}
+			</a>
 		{% endif %}
 	{% endfor %}
 </ul>

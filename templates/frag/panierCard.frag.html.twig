@@ -1,0 +1,15 @@
+{% set miniature = '/assets/media/img/' ~ info[indice].image %}
+{% set prixTotal = prixTotal + info[indice].prix %}
+
+<li>
+	<div class="card left">
+		<div class="imgContPanier">
+			<img src="{{ asset(miniature) }}" width="110%"/>
+		</div>
+		<div class="contTextPanier left">
+			<h2>{{ info[indice].titre }}</h2>
+			<p>{{ info[indice].plateformes }}</p>
+			<p id="prix">{{ info[indice].prix ~ '€' }}</p>
+		</div>
+	</div>
+</li>

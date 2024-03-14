@@ -2,32 +2,9 @@
 {% block title %}
 	PROXGAMING
 {% endblock %}
-{% block javascripts %}
-{% endblock %}
-{% set size = videoGames | length %}
-{% set sectionInfo = [
-		{
-			titre:"connexion",
-			categorie:videoGames,
-		},{
-			titre:"panier",
-			categorie:videoGames,
-		},{
-			titre:"nouveautés",
-			categorie:videoGames,
-		},{
-			titre:"populaires",
-			categorie:videoGames,
-		},{
-			titre:"meilleures ventes",
-			categorie:videoGames,
-		},{
-			titre:"promos",
-			categorie:videoGames,
-		}
-	] %}
-
-{% set size = sectionInfo | length %}
+{# {% block javascript %}
+	<script src="/assets/script/script.js" defer></script>
+{% endblock %} #}
 {% block body %}
 	{% include '/frag/menuburger.frag.html.twig' %}
 	{% include '/frag/navbar.frag.html.twig' %}

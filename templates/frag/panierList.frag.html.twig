@@ -1,0 +1,49 @@
+{% set videos = videoGames %}
+{% set size = videos | length %}
+{% set prixTotal = 0 %}
+<div class="panierList left">
+	<div class="left">
+		<h1>
+            {% include '/frag/btn.frag.html.twig' 
+            with {
+                'titre': 'votre panier', 
+                'chemin': 'home',
+                'indice': '',
+                'label': 'accueil',
+                }
+            %}
+		</h1>
+
+		<ul class="left">
+			{% set randN = random(0,5) %}
+			{% for indice in 0.. randN %}
+				{% set rand = random(0,9) %}
+				{% set miniature = '/assets/media/img/' ~ videos[rand].image %}
+				<li>
+					<div class="cardPanier left">
+						<div class="imgContPanier">
+							<img src="{{ asset(miniature) }}" width="110%"/>
+						</div>
+						<div class="contTextPanier left">
+							<h2>{{ videos[rand].titre }}</h2>
+							<p>{{ videos[rand].plateformes }}</p>
+							<div class="crud rowCenter">
+								<p id="prix">{{ videos[rand].prix }}€</p>
+								<i class="fa-solid fa-trash fa-3x"></i>
+							</div>
+							{% set prixTotal = prixTotal + videos[rand].prix %}
+						</div>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="left">
+		<div class="modal prixTotal">
+			<h2>Prix total :
+			</h2>
+			<p id="prix">{{ prixTotal }}€</p>
+			<button>payer</button>
+		</div>
+	</div>
+</div>

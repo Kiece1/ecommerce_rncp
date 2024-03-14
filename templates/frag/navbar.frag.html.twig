@@ -9,6 +9,8 @@
 
 	<div class="logos rowCenter">
 		{% include '/frag/userlogo.frag.html.twig' %}
-		<i class="fa-solid fa-basket-shopping"></i>
+		<a href="{{ path('panier', {'indice': -1}) }}">
+			<i class="fa-solid fa-basket-shopping"></i>
+		</a>
 	</div>
 </nav>

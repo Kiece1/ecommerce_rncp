@@ -36,10 +36,24 @@ class HomeController extends AbstractController
     #[Route('/conditions', name: 'conditions')]
     public function conditions(VideoGameRepository $videoGameRepository): Response
     {
+        $menuInfo = ["nouveautés", "populaires", "meilleures ventes", "promos"];
+
         $videoGames = $videoGameRepository->findAll();
         return $this->render(
             'home/conditions.html.twig',
-            compact('videoGames')
+            compact('videoGames', 'menuInfo')
+        );
+    }
+
+    #[Route('/panier/{indice?0}', name: 'panier')]
+    public function panier($indice, VideoGameRepository $videoGameRepository): Response
+    {
+        $menuInfo = ["nouveautés", "populaires", "meilleures ventes", "promos"];
+
+        $videoGames = $videoGameRepository->findAll();
+        return $this->render(
+            'home/panier.html.twig',
+            compact('videoGames', 'menuInfo', 'indice')
         );
     }
 }
